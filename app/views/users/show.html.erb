@@ -1,1 +1,7 @@
-<p>a specific user</p>
+<%= render @user %>
+<div class="info-box">
+  <h2>Bio</h2>
+  <p><%= @user.bio %></p>
+</div>
+<%= render partial: 'posts/post', collection: @user.posts %>
+<button type="button">Show all posts</button>
