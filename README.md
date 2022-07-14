@@ -23,7 +23,7 @@ We will be completeing the project on the following checkpoints:
 
 ## Additional Used
 
-- Linters ooo
+- Linters
 - Gitflow
 
 
