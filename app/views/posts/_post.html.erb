@@ -4,3 +4,8 @@
   <p>Likes: <%=post.likes_counter%></p>
   <p>Comments: <%= post.comments_counter %></p>
 </div>
+<%if display_comments == true%>
+  <div class="info-box comment-box">
+  <%= render partial: 'comment', collection: post.comments %>
+  </div>
+<%end%>
