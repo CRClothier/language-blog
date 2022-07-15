@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
 
   it 'last_three_posts method returns last 3 posts' do
     4.times { Post.create(user: subject, title: 'hello', text: 'I love blogging') }
-    expect(subject.last_three_posts.size + 3).to eq(3)
+    expect(subject.last_three_posts.size).to eq(3)
   end
 
   it 'name should be present' do

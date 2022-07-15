@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 180px;
+  margin-bottom: 2rem;
+}
+
+.user-info {
+  width: 60%;
+}
+
+.info-box {
+  border: solid black 1px;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.comment-box {
+  margin-top: -1.8rem;
+}

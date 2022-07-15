@@ -8,8 +8,8 @@ We will be completeing the project on the following checkpoints:
 - Checkpoint 2: Processing data in models. ✅
 - Checkpoint 3:  Validations and Model specs. ✅
 - Checkpoint 4: Setup and controllers. ✅
-- ***Checkpoint 5: Controllers specs.*** ⬅️
-- Checkpoint 6: Views.
+- Checkpoint 5: Controllers specs. ✅
+- ***Checkpoint 6: Views.*** ⬅️
 - Checkpoint 7: Forms.
 - Checkpoint 8: Integration specs for Views and fixing n+1 problems.
 - Checkpoint 9: Add Devise.
@@ -23,7 +23,7 @@ We will be completeing the project on the following checkpoints:
 
 ## Additional Used
 
-- Linters ooo
+- Linters
 - Gitflow
 
 

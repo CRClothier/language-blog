@@ -1,1 +1,4 @@
 <p>all posts for a specific user</p>
+<%= render partial: 'users/user', locals: { user: @user } %>
+
+<%= render partial: 'post', collection: @posts, locals: { display_comments: true } %>
