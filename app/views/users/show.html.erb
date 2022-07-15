@@ -3,5 +3,5 @@
   <h2>Bio</h2>
   <p><%= @user.bio %></p>
 </div>
-<%= render partial: 'posts/post', collection: @user.posts %>
+<%= render partial: 'posts/post', collection: @user.posts, locals: { display_comments: false }%>
 <button type="button">Show all posts</button>
