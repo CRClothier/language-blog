@@ -3,5 +3,7 @@
   <h2>Bio</h2>
   <p><%= @user.bio %></p>
 </div>
-<%= render partial: 'posts/post', collection: @user.posts %>
-<button type="button">Show all posts</button>
+<%= render partial: 'posts/post', collection: @user.posts, locals: { display_comments: false }%>
+<div class="btn">
+  <%= link_to 'See all posts', user_posts_path(@user), class: "btn-link" %>
+</div>

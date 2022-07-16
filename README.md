@@ -9,8 +9,8 @@ We will be completeing the project on the following checkpoints:
 - Checkpoint 3:  Validations and Model specs. ✅
 - Checkpoint 4: Setup and controllers. ✅
 - Checkpoint 5: Controllers specs. ✅
-- ***Checkpoint 6: Views.*** ⬅️
-- Checkpoint 7: Forms.
+- Checkpoint 6: Views. ✅
+- ***Checkpoint 7: Forms.*** ⬅️
 - Checkpoint 8: Integration specs for Views and fixing n+1 problems.
 - Checkpoint 9: Add Devise.
 - Checkpoint 10: Add authorization rules.
@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 
 Then `cd School-Library`
 
-## Run Tests (not yet implemented)
+## Run Tests
 
 1. Open a terminal and cd into the project repository.
 2. Run `rspec ./spec/requests/users_request_spec.rb`
