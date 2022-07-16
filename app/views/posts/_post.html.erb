@@ -1,11 +1,13 @@
-<div class="info-box">
-  <h2><%=post.title%></h2>
-  <p><%=post.text%></p>
-  <p>Likes: <%=post.likes_counter%></p>
-  <p>Comments: <%= post.comments_counter %></p>
-</div>
-<%if display_comments == true%>
-  <div class="info-box comment-box">
-  <%= render partial: 'comment', collection: post.comments %>
+<%= link_to user_post_path(@user, post), class: "post-link" do %>
+  <div class="info-box">
+    <h2><%=post.title%></h2>
+    <p><%=post.text%></p>
+    <p>Likes: <%=post.likes_counter%></p>
+    <p>Comments: <%= post.comments_counter %></p>
   </div>
+  <%if display_comments == true%>
+    <div class="info-box comment-box">
+    <%= render partial: 'comment', collection: post.comments %>
+    </div>
+  <%end%>
 <%end%>
