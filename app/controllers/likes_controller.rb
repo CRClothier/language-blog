@@ -8,6 +8,5 @@ class LikesController < ApplicationController
     else
       format.html { redirect_to @post }
     end
-    
   end
 end
