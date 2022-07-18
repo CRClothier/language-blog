@@ -7,7 +7,7 @@
   </div>
   <%if display_comments == true%>
     <div class="info-box comment-box">
-    <%= render partial: 'comment', collection: post.comments %>
+    <%= render partial: 'comment', collection: post.comments.includes(:user) %>
     </div>
   <%end%>
 <%end%>
