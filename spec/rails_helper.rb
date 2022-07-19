@@ -34,7 +34,7 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   if Bullet.enable?
     config.before(:each) { Bullet.start_request }
-    config.after(:each)  { Bullet.end_request }
+    config.after(:each) { Bullet.end_request }
   end
 
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
@@ -66,7 +66,7 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-  RSpec.describe "Signing in", js: true do
+  RSpec.describe 'Signing in', js: true do
     # tests that actually execute JavaScript
   end
 end
