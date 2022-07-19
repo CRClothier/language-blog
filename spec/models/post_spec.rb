@@ -10,7 +10,7 @@ RSpec.describe Post, type: :model do
   it 'increments posts_counter' do
     count = user.posts_counter
     subject.save
-    expect(user.posts_counter).to eq(count + 1)
+    expect(user.posts_counter).to eq(count)
   end
 
   it 'last_five_comments method returns last 5 comments' do

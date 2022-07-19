@@ -13,10 +13,18 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'active_record'
+require 'bullet'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+  if Bullet.enable?
+    config.before(:each) { Bullet.start_request }
+    config.after(:each) { Bullet.end_request }
+  end
+
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
@@ -61,7 +69,7 @@ RSpec.configure do |config|
   #   # Limits the available syntax to the non-monkey patched syntax that is
   #   # recommended. For more details, see:
   #   # https://relishapp.com/rspec/rspec-core/docs/configuration/zero-monkey-patching-mode
-  #   config.disable_monkey_patching!
+  config.disable_monkey_patching!
   #
   #   # Many RSpec users commonly either run the entire suite or an individual
   #   # file, and it's useful to allow more verbose output when running an
@@ -82,11 +90,11 @@ RSpec.configure do |config|
   #   # order dependency and want to debug it, you can fix the order by providing
   #   # the seed, which is printed after each run.
   #   #     --seed 1234
-  #   config.order = :random
+  config.order = :random
   #
   #   # Seed global randomization in this process using the `--seed` CLI option.
   #   # Setting this allows you to use `--seed` to deterministically reproduce
   #   # test failures related to randomization by passing the same `--seed` value
   #   # as the one that triggered the failure.
-  #   Kernel.srand config.seed
+  Kernel.srand config.seed
 end
