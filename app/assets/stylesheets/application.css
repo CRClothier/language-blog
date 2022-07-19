@@ -59,7 +59,7 @@ body {
 
 button {
   background-color: blanchedalmond;
-  text-shadow: 2px;
+  text-shadow: none;
 }
 
 .signup {
