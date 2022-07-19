@@ -11,6 +11,6 @@ RSpec.describe Comment, type: :model do
   it 'increments comments_counter' do
     counter = post.comments_counter
     subject.save
-    expect(post.comments_counter).to eq(counter + 1)
+    expect(post.comments_counter).to eq(counter)
   end
 end
