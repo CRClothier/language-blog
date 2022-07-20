@@ -11,6 +11,20 @@
   </head>
 
   <body>
+  <nav>
+       <ul class="menu">
+         <li class="menu-link">
+           <% if user_signed_in? %>
+            <%= link_to 'Home', users_path, {:class => "link_class"} %>
+            <button class="button">
+              <%= link_to "LogOut", destroy_user_session_path, {:class => "link_class" } %>
+            </button>
+           <%end%>
+         </li>
+       </ul>
+     </nav>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
