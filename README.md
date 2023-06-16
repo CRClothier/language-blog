@@ -10,12 +10,12 @@ We will be completeing the project on the following checkpoints:
 - Checkpoint 4: Setup and controllers. ✅
 - Checkpoint 5: Controllers specs. ✅
 - Checkpoint 6: Views. ✅
-- ***Checkpoint 7: Forms.*** ⬅️
-- Checkpoint 8: Integration specs for Views and fixing n+1 problems.
-- Checkpoint 9: Add Devise.
-- Checkpoint 10: Add authorization rules.
-- Checkpoint 11: Add API endpoints.
-- Exercise: API documentation.
+- Checkpoint 7: Forms. ✅
+- Checkpoint 8: Integration specs for Views and fixing n+1 problems. ✅
+- Checkpoint 9: Add Devise. ✅
+- Checkpoint 10: Add authorization rules. ✅
+- Checkpoint 11: Add API endpoints. ✅
+- Exercise: API documentation. ✅
 
 ## Built With
 
