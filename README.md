@@ -25,6 +25,7 @@ We will be completeing the project on the following checkpoints:
 
 - Linters
 - Gitflow
+- github
 
 
 ## Getting Started
