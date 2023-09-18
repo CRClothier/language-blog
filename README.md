@@ -15,7 +15,7 @@ We will be completeing the project on the following checkpoints:
 - Checkpoint 9: Add Devise. 
 - Checkpoint 10: Add authorization rules. 
 - Checkpoint 11: Add API endpoints. 
-- Exercise: API documentation. 
+- Exercise: API documentation.
 
 ## Built With
 
